@@ -5,11 +5,14 @@ public class Prenda {
     ColorRGB colorPrimario;
     ColorRGB colorSecundario;
     Material material;
+    Trama trama;
 
-    public Prenda(Tipo tipo, ColorRGB colorPrimario, ColorRGB colorSecundario, Material material){
-        this.tipo = Objects.requireNonNull(tipo, "El tipo es obligatorio");
-        this.colorPrimario = Objects.requireNonNull(colorPrimario, "El color primario es obligatorio");
+
+    public Prenda(Tipo tipo, ColorRGB colorPrimario, ColorRGB colorSecundario, Material material, Trama trama) {
+        this.tipo = tipo;
+        this.colorPrimario = colorPrimario;
         this.colorSecundario = colorSecundario;
-        this.material = Objects.requireNonNull(material, "El material es obligatorio");
+        this.material = material;
+        this.trama = trama;
     }
 }
