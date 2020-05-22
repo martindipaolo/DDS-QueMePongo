@@ -6,6 +6,7 @@ public class Borrador {
     ColorRGB colorSecundario;
     Material material;
     Trama trama;
+    double temperaturaMaxima;
 
     public Borrador(Tipo tipo){
         this.tipo = Objects.requireNonNull(tipo, "El tipo es obligatorio");
@@ -28,6 +29,10 @@ public class Borrador {
         this.colorSecundario = colorSecundario;
     }
 
+    public void especificarTemperaturaMaxima(double temperaturaMaxima) {
+        this.temperaturaMaxima = temperaturaMaxima;
+    }
+
     public void especificarTrama(Trama trama){
         this.trama = trama;
     }
@@ -37,7 +42,7 @@ public class Borrador {
         Objects.requireNonNull(this.colorPrimario, "El color primario es obligatorio");
         if(this.trama == null)
             this.trama = Trama.LISA;
-        return new Prenda(this.tipo, this.colorPrimario, this.colorSecundario, this.material, this.trama);
+        return new Prenda(this.tipo, this.colorPrimario, this.colorSecundario, this.material, this.trama, this.temperaturaMaxima);
     }
 
 
