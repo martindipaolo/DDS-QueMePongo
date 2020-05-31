@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AccuWeatherAdapter implements InformadorClima {
+public class ServicioMeteorologicoAccuWeather implements ServicioMeteorologico {
     private AccuWeatherAPI accuWeatherAPI = new AccuWeatherAPI();
     private List<Map<String, Object>> condicionesClimaticas = accuWeatherAPI.getWeather("Buenos Aires, Argentina");
 

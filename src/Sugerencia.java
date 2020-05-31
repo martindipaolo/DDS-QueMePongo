@@ -1,11 +1,11 @@
 public class Sugerencia {
     private Atuendo atuendo;
-    private InformadorClima informadorClima;
+    private ServicioMeteorologico servicioMeteorologico;
 
-    public Sugerencia(Atuendo atuendo, InformadorClima informadorClima) {
-        atuendo.esValidoParaTemperatura(informadorClima.temperaturaActual());
+    public Sugerencia(Atuendo atuendo, ServicioMeteorologico servicioMeteorologico) {
+        atuendo.esValidoParaTemperatura(servicioMeteorologico.temperaturaActual());
         this.atuendo = atuendo;
-        this.informadorClima = informadorClima;
+        this.servicioMeteorologico = servicioMeteorologico;
     }
 
 }

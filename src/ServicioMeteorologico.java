@@ -1,3 +1,3 @@
-public interface InformadorClima {
+public interface ServicioMeteorologico {
     public double temperaturaActual();
 }
